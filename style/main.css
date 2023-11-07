@@ -1,0 +1,198 @@
+*{
+    font-family: 'Galindo', sans-serif;
+}
+
+.main-container{
+    background: #000;
+    height: auto;
+    transition: all .5s;
+}
+
+.main-container-win{
+    height: auto;
+    transition: all .5s;
+    background: #00ff00;
+}
+
+.main-container-lose{
+    height: auto;
+    transition: all .5s;
+    background: #f80000;
+}
+
+.title-container{
+    border-bottom: 5px solid #fff;
+    height: 25vh;
+}
+
+.title-container h1{
+    color: #fff;
+}
+
+.title-container p{
+    color: #fff;
+}
+
+.game-title{
+    font-size: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-subtitle{
+    font-size: 20px;
+}
+
+.game-dialog-container{
+    display: flex;
+    align-items: center;
+    height: 20vh;
+}
+
+.game-dialog-container p{
+    color: #fff;
+}
+
+.game-dialog{
+    font-size: 30px;
+}
+
+.game-container{
+    border-top: 5px solid #fff;
+    height: calc(100vh - 45vh) ;
+}
+
+.score-content, .game-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-content input{
+    width: 25%;
+    height: 70px;
+    border: 5px solid #fff;
+    background: none;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.sndButton{
+    border: none;
+    width: 25%;
+    margin: 10px;
+    border-radius: 10px;
+    transition: all .3s;
+}
+
+.agaButton{
+    border: none;
+    width: 25%;
+    border-radius: 10px; 
+    transition: all .3s;
+}
+
+.sndButton:hover{
+    background: #249225;
+}
+
+.agaButton:hover{
+    background: #CB3234;
+}
+
+.score-content p{
+    color: #fff;
+}
+
+.score{
+    font-size: 20px;
+    color: #fff;
+}
+
+.highscore{
+    font-size: 30px;
+}
+
+#gifContainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: none;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#gifImage{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+@media only screen and (max-width: 600px){
+    .game-title{
+        font-size: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .game-subtitle{
+        font-size: 15px;
+    }
+
+    .game-dialog{
+        font-size: 20px;
+    }
+
+    .title-container{
+        border-bottom: 5px solid #fff;
+        height: 20vh;
+    }
+
+    .game-dialog-container{
+        display: flex;
+        align-items: center;
+        height: 18vh;
+    }
+
+    .game-container{
+        border-top: 5px solid #fff;
+        height: calc(100vh - 38vh) ;
+    }
+
+}
+
+@media only screen and (max-height: 600px){
+    .game-title{
+        font-size: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .game-dialog{
+        font-size: 18px;
+    }
+
+    .game-dialog-container{
+        display: flex;
+        align-items: center;
+        height: 14vh;
+    }
+
+    .game-container{
+        border-top: 5px solid #fff;
+        height: calc(100vh - 34vh) ;
+    }
+}
